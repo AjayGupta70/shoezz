@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+//dotenv.config({ path: "./.env" });
 
 const shoeSchema = new mongoose.Schema({
   name: { type: String, required: true },

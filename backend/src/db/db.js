@@ -5,8 +5,13 @@ import dotenv from "dotenv";
 dotenv.config({ path: "./.env" });
 
 export const connectDB = async () => {
+  //console.log(process.env.MONGODB_URL);
+  console.group(DB_NAME);
   try {
-    const connection = await mongoose.connect(`${process.env.MONGODB_URL}/${DB_NAME}`);
+   // const connection = await mongoose.connect("mongodb+srv://prashant:prashant1234@heytesting.q5p1swt.mongodb.net/myAppDB");
+   const connection = await mongoose.connect(process.env.MONGODB_URL, { dbName: DB_NAME,
+    //(connectionString, optionsObject)
+});
     console.log(`MongoDB connected: ${connection.connection.host}`);
   } catch (error) {
     console.error("MongoDB connection error:", error);
