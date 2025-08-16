@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Node modules
 node_modules/
 
@@ -18,3 +19,25 @@ Thumbs.db
 
 # npm debug files
 npm-debug.log*
+=======
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+.env_sample
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+
+# npm debug files
+npm-debug.log*
+>>>>>>> ceaccb2b7fcc7b564076bf97100b5887401ccafc
