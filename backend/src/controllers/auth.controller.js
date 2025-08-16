@@ -27,6 +27,7 @@ export const registerUser = async (req, res) => {
     });
   } catch (error) {
     res.status(400).json({ message: "Registration failed", error });
+    // cout<<"abc"<<endl;
   }
 };
 //login 
