@@ -5,7 +5,8 @@ import User from "../models/user.model.js";
 
 export const protect = async (req, res, next) => {
   const authHeader = req.headers.authorization;
-
+// this  is header
+  // this is authHeader
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
     return res.status(401).json({ message: "No token provided" });
   }
