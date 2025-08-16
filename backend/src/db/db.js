@@ -10,6 +10,7 @@ export const connectDB = async () => {
   // abe 23t4wyre
   // shdrhsdzx
   //sehndrn
+  // i am tony stark  but not ironman
   console.group(DB_NAME);
   try {
    // const connection = await mongoose.connect("mongodb+srv://prashant:prashant1234@heytesting.q5p1swt.mongodb.net/myAppDB");
